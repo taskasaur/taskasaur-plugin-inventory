@@ -1,0 +1,1 @@
+This repository owns the public plugin inventory and specification. Optional feature source belongs in its separate plugin repository. Keep private signing keys and credentials out of Git. Validate the inventory and verify published artifacts before changing release metadata.

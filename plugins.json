@@ -1,0 +1,481 @@
+{
+  "schemaVersion": 1,
+  "name": "Taskasaur plugins",
+  "publishers": {
+    "taskasaur": "-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEA/fnUJvhDzWKEU9fOiapuhKLUf2iGwnel4GYTsweVk1k=\n-----END PUBLIC KEY-----\n"
+  },
+  "plugins": [
+    {
+      "id": "tasks",
+      "name": "Tasks",
+      "description": "Tasks, subtasks, dependencies, and boards.",
+      "version": "1.0.0",
+      "publisher": "taskasaur",
+      "license": "GPL-3.0-only",
+      "downloadUrl": "https://raw.githubusercontent.com/taskasaur/taskasaur-plugin-tasks/v1.0.0/releases/tasks-1.0.0.zip",
+      "sha256": "1f8a01a351a2b2c464380f933ce0058014f68d2e023a08857051be94e344c84b",
+      "repositoryUrl": "https://github.com/taskasaur/taskasaur-plugin-tasks",
+      "documentationUrl": "https://github.com/taskasaur/taskasaur-plugin-tasks/blob/main/README.md",
+      "tags": [
+        "tasks"
+      ],
+      "permissions": [
+        "tasks.read",
+        "tasks.write"
+      ],
+      "dependencies": [],
+      "grants": [
+        "core.records",
+        "core.storage.local",
+        "core.sync",
+        "core.ui",
+        "core.workspace",
+        "tasks.read",
+        "tasks.write"
+      ],
+      "platforms": [
+        "browser",
+        "desktop",
+        "ios",
+        "android"
+      ]
+    },
+    {
+      "id": "track",
+      "name": "Track",
+      "description": "Activity history, measurements, and presets.",
+      "version": "1.0.0",
+      "publisher": "taskasaur",
+      "license": "GPL-3.0-only",
+      "downloadUrl": "https://raw.githubusercontent.com/taskasaur/taskasaur-plugin-track/v1.0.0/releases/track-1.0.0.zip",
+      "sha256": "63530f777317ba2e7db6d3904464145d5f397232511d697db21e505e17b61269",
+      "repositoryUrl": "https://github.com/taskasaur/taskasaur-plugin-track",
+      "documentationUrl": "https://github.com/taskasaur/taskasaur-plugin-track/blob/main/README.md",
+      "tags": [
+        "track"
+      ],
+      "permissions": [
+        "track.read",
+        "track.write"
+      ],
+      "dependencies": [],
+      "grants": [
+        "core.records",
+        "core.storage.local",
+        "core.sync",
+        "core.ui",
+        "core.workspace",
+        "track.read",
+        "track.write"
+      ],
+      "platforms": [
+        "browser",
+        "desktop",
+        "ios",
+        "android"
+      ]
+    },
+    {
+      "id": "time",
+      "name": "Time",
+      "description": "Timers, intervals, focus, and breaks.",
+      "version": "1.0.0",
+      "publisher": "taskasaur",
+      "license": "GPL-3.0-only",
+      "downloadUrl": "https://raw.githubusercontent.com/taskasaur/taskasaur-plugin-time/v1.0.0/releases/time-1.0.0.zip",
+      "sha256": "81d7d74ef82e23667ed63a85ee2b07843c2455464d4a03f58908884f434de3fb",
+      "repositoryUrl": "https://github.com/taskasaur/taskasaur-plugin-time",
+      "documentationUrl": "https://github.com/taskasaur/taskasaur-plugin-time/blob/main/README.md",
+      "tags": [
+        "time"
+      ],
+      "permissions": [
+        "time.read",
+        "time.write"
+      ],
+      "dependencies": [],
+      "grants": [
+        "core.records",
+        "core.server",
+        "core.storage.local",
+        "core.sync",
+        "core.ui",
+        "core.workspace",
+        "notifications.delete",
+        "notifications.list",
+        "notifications.put",
+        "time.read",
+        "time.write"
+      ],
+      "platforms": [
+        "browser",
+        "desktop",
+        "ios",
+        "android",
+        "server"
+      ]
+    },
+    {
+      "id": "calendar",
+      "name": "Calendar",
+      "description": "Events, recurrence, and standards-based calendar import/export.",
+      "version": "1.0.0",
+      "publisher": "taskasaur",
+      "license": "GPL-3.0-only",
+      "downloadUrl": "https://raw.githubusercontent.com/taskasaur/taskasaur-plugin-calendar/v1.0.0/releases/calendar-1.0.0.zip",
+      "sha256": "83282cc37c85404fd4408e3fec7f632ad341b1df9de92e2fdf4d177cdb995111",
+      "repositoryUrl": "https://github.com/taskasaur/taskasaur-plugin-calendar",
+      "documentationUrl": "https://github.com/taskasaur/taskasaur-plugin-calendar/blob/main/README.md",
+      "tags": [
+        "calendar"
+      ],
+      "permissions": [
+        "calendar.read",
+        "calendar.write"
+      ],
+      "dependencies": [],
+      "grants": [
+        "calendar.read",
+        "calendar.write",
+        "core.records",
+        "core.storage.local",
+        "core.sync",
+        "core.ui",
+        "core.workspace",
+        "reminders.delete",
+        "reminders.list",
+        "reminders.put"
+      ],
+      "platforms": [
+        "browser",
+        "desktop",
+        "ios",
+        "android"
+      ]
+    },
+    {
+      "id": "reminders",
+      "name": "Reminders",
+      "description": "Scheduled reminders with required iCalendar fields.",
+      "version": "1.0.0",
+      "publisher": "taskasaur",
+      "license": "GPL-3.0-only",
+      "downloadUrl": "https://raw.githubusercontent.com/taskasaur/taskasaur-plugin-reminders/v1.0.0/releases/reminders-1.0.0.zip",
+      "sha256": "50bcaf6e36e8b633cdf5beaa0703d01301f473e1b1c548e7fb463ee37498e5a6",
+      "repositoryUrl": "https://github.com/taskasaur/taskasaur-plugin-reminders",
+      "documentationUrl": "https://github.com/taskasaur/taskasaur-plugin-reminders/blob/main/README.md",
+      "tags": [
+        "reminders"
+      ],
+      "permissions": [
+        "reminders.read",
+        "reminders.write"
+      ],
+      "dependencies": [],
+      "grants": [
+        "core.jobs",
+        "core.notifications",
+        "core.records",
+        "core.schedules",
+        "core.server",
+        "core.storage.local",
+        "core.sync",
+        "core.ui",
+        "core.workspace",
+        "reminders.read",
+        "reminders.write"
+      ],
+      "platforms": [
+        "browser",
+        "desktop",
+        "ios",
+        "android",
+        "server"
+      ]
+    },
+    {
+      "id": "email-client",
+      "name": "Email Client",
+      "description": "Mail accounts, mailbox sync, drafts, attachments, and send/receive.",
+      "version": "1.0.0",
+      "publisher": "taskasaur",
+      "license": "GPL-3.0-only",
+      "downloadUrl": "https://raw.githubusercontent.com/taskasaur/taskasaur-plugin-email-client/v1.0.0/releases/email-client-1.0.0.zip",
+      "sha256": "3be40ca7648f8c498d51d84643c8a70f307135fbe7a39967b12ef262d626c822",
+      "repositoryUrl": "https://github.com/taskasaur/taskasaur-plugin-email-client",
+      "documentationUrl": "https://github.com/taskasaur/taskasaur-plugin-email-client/blob/main/README.md",
+      "tags": [
+        "email-client"
+      ],
+      "permissions": [
+        "email-client.read",
+        "email-client.write"
+      ],
+      "dependencies": [],
+      "grants": [
+        "core.jobs",
+        "core.records",
+        "core.server",
+        "core.storage.local",
+        "core.sync",
+        "core.ui",
+        "core.workspace",
+        "credentials.use",
+        "email-client.read",
+        "email-client.write",
+        "files.access",
+        "files.delete",
+        "files.list",
+        "files.put"
+      ],
+      "platforms": [
+        "browser",
+        "desktop",
+        "ios",
+        "android",
+        "server"
+      ]
+    },
+    {
+      "id": "automation-runtime",
+      "name": "Automation Runtime",
+      "description": "TypeScript workflows executed on an explicitly selected device.",
+      "version": "1.0.0",
+      "publisher": "taskasaur",
+      "license": "GPL-3.0-only",
+      "downloadUrl": "https://raw.githubusercontent.com/taskasaur/taskasaur-plugin-automation-runtime/v1.0.0/releases/automation-runtime-1.0.0.zip",
+      "sha256": "940431b390d8cbd959655aabf8cc6f5042828c301c3f8661caa92fe0f173c6bb",
+      "repositoryUrl": "https://github.com/taskasaur/taskasaur-plugin-automation-runtime",
+      "documentationUrl": "https://github.com/taskasaur/taskasaur-plugin-automation-runtime/blob/main/README.md",
+      "tags": [
+        "automation-runtime"
+      ],
+      "permissions": [
+        "automation-runtime.read",
+        "automation-runtime.write"
+      ],
+      "dependencies": [],
+      "grants": [
+        "automation-runtime.read",
+        "automation-runtime.write",
+        "core.devices",
+        "core.jobs",
+        "core.records",
+        "core.server",
+        "credentials.use"
+      ],
+      "platforms": [
+        "server"
+      ]
+    },
+    {
+      "id": "automation-editor",
+      "name": "Automation Editor",
+      "description": "Visual workflow editor and execution history.",
+      "version": "1.0.0",
+      "publisher": "taskasaur",
+      "license": "GPL-3.0-only",
+      "downloadUrl": "https://raw.githubusercontent.com/taskasaur/taskasaur-plugin-automation-editor/v1.0.0/releases/automation-editor-1.0.0.zip",
+      "sha256": "d0a9fd8010621d3a0de76032e8bb6a6d883ca77b39014cd94c10b591af6da6e3",
+      "repositoryUrl": "https://github.com/taskasaur/taskasaur-plugin-automation-editor",
+      "documentationUrl": "https://github.com/taskasaur/taskasaur-plugin-automation-editor/blob/main/README.md",
+      "tags": [
+        "automation-editor"
+      ],
+      "permissions": [
+        "automation-editor.read",
+        "automation-editor.write"
+      ],
+      "dependencies": [
+        "automation-runtime"
+      ],
+      "grants": [
+        "automation-editor.read",
+        "automation-editor.write",
+        "core.devices",
+        "core.records",
+        "core.storage.local",
+        "core.sync",
+        "core.ui",
+        "core.workspace",
+        "devices.delete",
+        "devices.list",
+        "devices.put",
+        "workflow_runs.delete",
+        "workflow_runs.list",
+        "workflow_runs.put",
+        "workflows.delete",
+        "workflows.list",
+        "workflows.put"
+      ],
+      "platforms": [
+        "browser",
+        "desktop",
+        "ios",
+        "android"
+      ]
+    },
+    {
+      "id": "remote-terminal",
+      "name": "Remote Terminal",
+      "description": "Authorized interactive shells on connected computers.",
+      "version": "1.0.0",
+      "publisher": "taskasaur",
+      "license": "GPL-3.0-only",
+      "downloadUrl": "https://raw.githubusercontent.com/taskasaur/taskasaur-plugin-remote-terminal/v1.0.0/releases/remote-terminal-1.0.0.zip",
+      "sha256": "9a4f01dfb81b29d09fcc5dc824e7245154321a367e4b735d6fec9d765c039a3d",
+      "repositoryUrl": "https://github.com/taskasaur/taskasaur-plugin-remote-terminal",
+      "documentationUrl": "https://github.com/taskasaur/taskasaur-plugin-remote-terminal/blob/main/README.md",
+      "tags": [
+        "remote-terminal"
+      ],
+      "permissions": [
+        "remote-terminal.read",
+        "remote-terminal.write"
+      ],
+      "dependencies": [],
+      "grants": [
+        "core.devices",
+        "core.records",
+        "core.server",
+        "core.storage.local",
+        "core.streams",
+        "core.sync",
+        "core.ui",
+        "core.workspace",
+        "credentials.use",
+        "devices.delete",
+        "devices.list",
+        "devices.put",
+        "remote-terminal.read",
+        "remote-terminal.write"
+      ],
+      "platforms": [
+        "browser",
+        "desktop",
+        "ios",
+        "android",
+        "server"
+      ]
+    },
+    {
+      "id": "office-editor",
+      "name": "Office Editor",
+      "description": "Offline documents, spreadsheets, and presentations.",
+      "version": "1.0.0",
+      "publisher": "taskasaur",
+      "license": "GPL-3.0-only",
+      "downloadUrl": "https://raw.githubusercontent.com/taskasaur/taskasaur-plugin-office-editor/v1.0.0/releases/office-editor-1.0.0.zip",
+      "sha256": "37d855d5dd773999956b6073416785a57a7d9567b64b5bceae54dd237a3df4ca",
+      "repositoryUrl": "https://github.com/taskasaur/taskasaur-plugin-office-editor",
+      "documentationUrl": "https://github.com/taskasaur/taskasaur-plugin-office-editor/blob/main/README.md",
+      "tags": [
+        "office-editor"
+      ],
+      "permissions": [
+        "office-editor.read",
+        "office-editor.write"
+      ],
+      "dependencies": [],
+      "grants": [
+        "core.records",
+        "core.storage.local",
+        "core.sync",
+        "core.ui",
+        "core.workspace",
+        "files.access",
+        "files.delete",
+        "files.list",
+        "files.put",
+        "office-editor.read",
+        "office-editor.write"
+      ],
+      "platforms": [
+        "browser",
+        "desktop",
+        "ios",
+        "android"
+      ]
+    },
+    {
+      "id": "sharing",
+      "name": "Sharing",
+      "description": "Scoped resource sharing and permissions.",
+      "version": "1.0.0",
+      "publisher": "taskasaur",
+      "license": "GPL-3.0-only",
+      "downloadUrl": "https://raw.githubusercontent.com/taskasaur/taskasaur-plugin-sharing/v1.0.0/releases/sharing-1.0.0.zip",
+      "sha256": "99c9cb8f53cf7f55b273676a2bc593c81ea90eec813f517b26e68649a00d8992",
+      "repositoryUrl": "https://github.com/taskasaur/taskasaur-plugin-sharing",
+      "documentationUrl": "https://github.com/taskasaur/taskasaur-plugin-sharing/blob/main/README.md",
+      "tags": [
+        "sharing"
+      ],
+      "permissions": [
+        "sharing.read",
+        "sharing.write"
+      ],
+      "dependencies": [],
+      "grants": [
+        "core.access",
+        "core.records",
+        "core.storage.local",
+        "core.sync",
+        "core.ui",
+        "core.workspace",
+        "grants.delete",
+        "grants.list",
+        "grants.put",
+        "sharing.read",
+        "sharing.write"
+      ],
+      "platforms": [
+        "browser",
+        "desktop",
+        "ios",
+        "android"
+      ]
+    },
+    {
+      "id": "connector-github",
+      "name": "Connector Github",
+      "description": "GitHub issues and actions through shared credentials.",
+      "version": "1.0.0",
+      "publisher": "taskasaur",
+      "license": "GPL-3.0-only",
+      "downloadUrl": "https://raw.githubusercontent.com/taskasaur/taskasaur-plugin-connector-github/v1.0.0/releases/connector-github-1.0.0.zip",
+      "sha256": "56dc21dd9d9a336e3a29053364bafdecbfc6dba1eb99a802c9f1838423eeea75",
+      "repositoryUrl": "https://github.com/taskasaur/taskasaur-plugin-connector-github",
+      "documentationUrl": "https://github.com/taskasaur/taskasaur-plugin-connector-github/blob/main/README.md",
+      "tags": [
+        "connector-github"
+      ],
+      "permissions": [
+        "connector-github.read",
+        "connector-github.write"
+      ],
+      "dependencies": [],
+      "grants": [
+        "connector-github.read",
+        "connector-github.write",
+        "core.records",
+        "core.server",
+        "core.storage.local",
+        "core.sync",
+        "core.ui",
+        "core.workspace",
+        "credentials.use",
+        "tasks.delete",
+        "tasks.list",
+        "tasks.put"
+      ],
+      "platforms": [
+        "browser",
+        "desktop",
+        "ios",
+        "android",
+        "server"
+      ]
+    }
+  ]
+}

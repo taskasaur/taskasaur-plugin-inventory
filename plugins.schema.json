@@ -1,0 +1,141 @@
+{
+  "$ref": "#/definitions/TaskasaurPluginInventory",
+  "definitions": {
+    "TaskasaurPluginInventory": {
+      "type": "object",
+      "properties": {
+        "schemaVersion": {
+          "type": "number",
+          "const": 1
+        },
+        "name": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 120
+        },
+        "publishers": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "string",
+            "maxLength": 4096
+          }
+        },
+        "plugins": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string",
+                "pattern": "^[a-z][a-z0-9-]*(\\.[a-z0-9-]+)*$"
+              },
+              "name": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 120
+              },
+              "description": {
+                "type": "string",
+                "maxLength": 2000
+              },
+              "version": {
+                "type": "string",
+                "pattern": "^\\d+\\.\\d+\\.\\d+$"
+              },
+              "publisher": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 120
+              },
+              "license": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 120
+              },
+              "downloadUrl": {
+                "type": "string",
+                "format": "uri"
+              },
+              "sha256": {
+                "type": "string",
+                "pattern": "^[a-f0-9]{64}$"
+              },
+              "repositoryUrl": {
+                "$ref": "#/definitions/TaskasaurPluginInventory/properties/plugins/items/properties/downloadUrl"
+              },
+              "homepageUrl": {
+                "$ref": "#/definitions/TaskasaurPluginInventory/properties/plugins/items/properties/downloadUrl"
+              },
+              "documentationUrl": {
+                "$ref": "#/definitions/TaskasaurPluginInventory/properties/plugins/items/properties/downloadUrl"
+              },
+              "tags": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "maxLength": 40
+                },
+                "maxItems": 20,
+                "default": []
+              },
+              "permissions": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                },
+                "maxItems": 500
+              },
+              "dependencies": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                },
+                "maxItems": 50,
+                "default": []
+              },
+              "grants": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                },
+                "maxItems": 500
+              },
+              "platforms": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "enum": [
+                    "browser",
+                    "desktop",
+                    "ios",
+                    "android",
+                    "server",
+                    "runner"
+                  ]
+                },
+                "default": []
+              }
+            },
+            "required": [
+              "id",
+              "name",
+              "description",
+              "version",
+              "publisher",
+              "license",
+              "downloadUrl",
+              "sha256",
+              "permissions",
+              "grants"
+            ],
+            "additionalProperties": false
+          },
+          "maxItems": 500
+        }
+      },
+      "required": ["schemaVersion", "name", "publishers", "plugins"],
+      "additionalProperties": false
+    }
+  },
+  "$schema": "http://json-schema.org/draft-07/schema#"
+}
