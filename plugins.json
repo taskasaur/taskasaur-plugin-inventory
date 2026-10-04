@@ -362,11 +362,11 @@
       "id": "office-editor",
       "name": "Office Editor",
       "description": "Offline documents, spreadsheets, and presentations.",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "publisher": "taskasaur",
       "license": "GPL-3.0-only",
-      "downloadUrl": "https://raw.githubusercontent.com/taskasaur/taskasaur-plugin-office-editor/v1.0.0/releases/office-editor-1.0.0.zip",
-      "sha256": "37d855d5dd773999956b6073416785a57a7d9567b64b5bceae54dd237a3df4ca",
+      "downloadUrl": "https://raw.githubusercontent.com/taskasaur/taskasaur-plugin-office-editor/v1.1.0/releases/office-editor-1.1.0.zip",
+      "sha256": "86377386c28875317bdff8842d29b6a815601f5fbdde68ce6bf672a299400aee",
       "repositoryUrl": "https://github.com/taskasaur/taskasaur-plugin-office-editor",
       "documentationUrl": "https://github.com/taskasaur/taskasaur-plugin-office-editor/blob/main/README.md",
       "tags": [
@@ -475,6 +475,33 @@
         "ios",
         "android",
         "server"
+      ]
+    },
+    {
+      "id": "dashboard",
+      "name": "Dashboard",
+      "description": "Active work and the shared workspace search and command interface.",
+      "version": "1.0.0",
+      "publisher": "taskasaur",
+      "license": "GPL-3.0-only",
+      "downloadUrl": "https://raw.githubusercontent.com/taskasaur/taskasaur-plugin-dashboard/v1.0.0/releases/dashboard-1.0.0.zip",
+      "sha256": "d67ed5e69471028af7d0a82a043cf04183692de81abd7ccb1564cda5903a1a96",
+      "repositoryUrl": "https://github.com/taskasaur/taskasaur-plugin-dashboard",
+      "documentationUrl": "https://github.com/taskasaur/taskasaur-plugin-dashboard/blob/main/README.md",
+      "tags": [
+        "dashboard",
+        "search"
+      ],
+      "permissions": [],
+      "dependencies": [],
+      "grants": [
+        "core.ui"
+      ],
+      "platforms": [
+        "browser",
+        "desktop",
+        "ios",
+        "android"
       ]
     }
   ]
